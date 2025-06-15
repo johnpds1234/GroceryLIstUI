@@ -10,11 +10,11 @@ public class GroceryBotUI extends JFrame implements ActionListener {
     private JTextArea responseArea;
 
     public GroceryBotUI() {
-        setTitle("GroceryBot 🍽️");
+        setTitle("GroceryBot");
         setSize(600, 450);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new BorderLayout(15, 10)); // padding between components
-        getContentPane().setBackground(new Color(245, 245, 245)); // Light background
+        setLayout(new BorderLayout(15, 10));
+        getContentPane().setBackground(new Color(245, 245, 245));
 
         Font mainFont = new Font("SansSerif", Font.PLAIN, 16);
         Font buttonFont = new Font("SansSerif", Font.BOLD, 16);
@@ -25,10 +25,10 @@ public class GroceryBotUI extends JFrame implements ActionListener {
             BorderFactory.createLineBorder(Color.GRAY),
             BorderFactory.createEmptyBorder(8, 12, 8, 12)));
 
-        generateButton = new JButton("🧠 Generate");
+        generateButton = new JButton("Generate");
         generateButton.setFont(buttonFont);
         generateButton.setBackground(new Color(66, 133, 244));
-        generateButton.setForeground(Color.WHITE);
+        generateButton.setForeground(Color.BLACK);
         generateButton.setFocusPainted(false);
         generateButton.addActionListener(this);
 
