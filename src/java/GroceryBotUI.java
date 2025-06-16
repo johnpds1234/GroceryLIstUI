@@ -66,7 +66,7 @@ public class GroceryBotUI extends JFrame implements ActionListener {
     private String runOllama(String prompt) {
         StringBuilder response = new StringBuilder();
         try {
-            URL url = new URL("http://localhost:11434/api/generate");
+            URL url = new URL("http://localhost:XXXXXX/api/generate");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
